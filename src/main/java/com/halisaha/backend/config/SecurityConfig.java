@@ -23,9 +23,18 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/auth/**").permitAll()
+                        .requestMatchers("/api/auth/**").permitAll() // Login ve Register herkese açık
+
+                        // 1. Sadece ADMIN girebilir
                         .requestMatchers("/api/admin/**").hasRole("ADMIN")
+
+                        // 2. OWNER uç noktasına OWNER ve ADMIN girebilir (USER giremez)
                         .requestMatchers("/api/owner/**").hasAnyRole("OWNER", "ADMIN")
+
+                        // 3. USER uç noktasına USER ve ADMIN girebilir (OWNER giremez)
+                        .requestMatchers("/api/user/**").hasAnyRole("USER", "ADMIN")
+
+                        // Geri kalan her şey için giriş yapmış olmak yeterli
                         .anyRequest().authenticated()
                 )
                 .sessionManagement(sess -> sess.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
