@@ -1,5 +1,6 @@
 package com.halisaha.backend.service;
 
+import lombok.extern.slf4j.Slf4j;
 import com.halisaha.backend.dto.AuthResponse;
 import com.halisaha.backend.dto.LoginRequest;
 import com.halisaha.backend.dto.RegisterRequest;
@@ -13,6 +14,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class AuthService {
@@ -22,20 +24,30 @@ public class AuthService {
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
 
-    public AuthResponse register(RegisterRequest request) {
+    public void register(RegisterRequest request) {
         if (userRepository.existsByUsername(request.username())) {
             throw new IllegalArgumentException("Username is already taken");
+        }
+
+        if (userRepository.existsByEmail(request.email())) {
+            throw new IllegalArgumentException("Email is already in use");
+        }
+        if (userRepository.existsByPhoneNumber(request.phoneNumber())){
+            throw new IllegalArgumentException("Phone number is already in use");
         }
 
         User user = User.builder()
                 .username(request.username())
                 .password(passwordEncoder.encode(request.password()))
                 .role(Role.USER)
+                .email(request.email())
+                .phoneNumber(request.phoneNumber())
+                .name(request.name())
+                .surname(request.surname())
                 .build();
 
         userRepository.save(user);
-        String token = jwtService.generateToken(user);
-        return new AuthResponse(token);
+        log.info("User {} registered: ", user.getUsername());
     }
 
     public AuthResponse authenticate(LoginRequest request) {
@@ -51,6 +63,7 @@ public class AuthService {
                 .orElseThrow(() -> new IllegalArgumentException("User not found"));
 
         String token = jwtService.generateToken(user);
+        log.info("JWT Token is generated for the User called {}",user.getUsername());
         return new AuthResponse(token);
     }
 }

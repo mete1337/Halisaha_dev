@@ -22,17 +22,6 @@ public class DatabaseSeeder implements CommandLineRunner {
     public void run(String... args) {
         if (userRepository.count() == 0) {
 
-            // 1. OWNER Hesabı
-            User owner = User.builder()
-                    .name("Ahmet")
-                    .surname("Yılmaz")
-                    .username("ahmetyilmaz")
-                    .phoneNumber("05551112233")
-                    .email("owner@test.com")
-                    .password(passwordEncoder.encode("1234"))
-                    .role(Role.OWNER)
-                    .build();
-            userRepository.save(owner);
 
             // 2. USER Hesabı
             User user = User.builder()

@@ -9,7 +9,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.lang.NonNull;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -26,7 +25,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     private final JwtService jwtService;
     private final UserDetailsService userDetailsService;
-    private final SecurityErrorResponseWriter errorResponseWriter;
 
     @Override
     protected void doFilterInternal(
@@ -59,13 +57,11 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             }
         } catch (ExpiredJwtException ex) {
             SecurityContextHolder.clearContext();
-            errorResponseWriter.write(request, response, HttpStatus.UNAUTHORIZED,
-                    "TOKEN_EXPIRED", "JWT token has expired");
+            response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "JWT token has expired");
             return;
         } catch (JwtException | IllegalArgumentException | UsernameNotFoundException ex) {
             SecurityContextHolder.clearContext();
-            errorResponseWriter.write(request, response, HttpStatus.UNAUTHORIZED,
-                    "INVALID_TOKEN", "JWT token is invalid");
+            response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "JWT token is invalid");
             return;
         }
 

@@ -9,6 +9,7 @@ import com.halisaha.backend.repository.SubPitchRepository;
 import com.halisaha.backend.repository.ReservationRepository;
 import com.halisaha.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -22,14 +23,13 @@ public class ReservationService {
     private final SubPitchRepository subPitchRepository;
     private final UserRepository userRepository;
 
-    public Map<String, String> createReservation(ReservationRequest request, String userEmail) {
+    public ReservationResponse createReservation(ReservationRequest request, String username) {
 
-        User user = userRepository.findByEmail(userEmail)
-                .orElseThrow(() -> new RuntimeException("Kullanıcı bulunamadı"));
+        User user = userRepository.findByUsername(username)
+                .orElseThrow(() -> new UsernameNotFoundException("User could not find for the reservation"));
 
-        // Artık Pitch değil, SubPitch (Alt saha) buluyoruz
         SubPitch subPitch = subPitchRepository.findById(request.subPitchId())
-                .orElseThrow(() -> new RuntimeException("Alt saha bulunamadı"));
+                .orElseThrow(() -> new RuntimeException("The Subpitch requested for reservation is not exist"));
 
         boolean isBooked = reservationRepository.existsBySubPitchIdAndBookingDateAndStartTimeLessThanAndEndTimeGreaterThan(
                 request.subPitchId(),
@@ -39,9 +39,9 @@ public class ReservationService {
         );
 
         if (isBooked) {
-            throw new RuntimeException("Maalesef bu saat dilimi zaten dolu!");
+            throw new RuntimeException("That time is already occupied for the subpitch");
         }
-
+//Toplam rezervasyon saati konuşulacak
         Reservation newReservation = Reservation.builder()
                 .subPitch(subPitch)
                 .user(user)
@@ -52,17 +52,23 @@ public class ReservationService {
                 .build();
 
         reservationRepository.save(newReservation);
-
-        return Map.of("mesaj", "Rezervasyon başarıyla oluşturuldu!");
+        return ReservationResponse.builder()
+                .id(newReservation.getId())
+                .pitchName(subPitch.getPitch().getName())
+                .subPitchName(subPitch.getName())
+                .bookingDate(newReservation.getBookingDate())
+                .startTime(newReservation.getStartTime())
+                .endTime(newReservation.getEndTime())
+                .build();
     }
 
-    public List<ReservationResponse> getUserReservations(String userEmail) {
-        return reservationRepository.findAllByUser_Email(userEmail)
+    public List<ReservationResponse> getUserReservations(String username) {
+        return reservationRepository.findAllByUser_username(username)
                 .stream()
                 .map(res -> new ReservationResponse(
                         res.getId(),
-                        // Kullanıcıya Tesis Adı + Alt Saha Adını birleştirip gösteriyoruz
-                        res.getSubPitch().getPitch().getName() + " - " + res.getSubPitch().getName(),
+                        res.getSubPitch().getPitch().getName(),
+                        res.getSubPitch().getName(),
                         res.getBookingDate(),
                         res.getStartTime(),
                         res.getEndTime()

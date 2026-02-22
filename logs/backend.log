@@ -1,0 +1,685 @@
+2026-02-21 21:14:32.368 INFO  o.h.validator.internal.util.Version [requestId=N/A] - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-21 21:14:32.412 INFO  c.h.backend.BackendApplication [requestId=N/A] - Starting BackendApplication using Java 21.0.10 with PID 33083 (/home/ulas/Halisaha_dev/target/classes started by ulas in /home/ulas/Halisaha_dev)
+2026-02-21 21:14:32.413 INFO  c.h.backend.BackendApplication [requestId=N/A] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 21:14:33.208 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-21 21:14:33.259 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Finished Spring Data repository scanning in 43 ms. Found 5 JPA repository interfaces.
+2026-02-21 21:14:33.674 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat initialized with port 8080 (http)
+2026-02-21 21:14:33.681 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-21 21:14:33.683 INFO  o.a.catalina.core.StandardService [requestId=N/A] - Starting service [Tomcat]
+2026-02-21 21:14:33.683 INFO  o.a.catalina.core.StandardEngine [requestId=N/A] - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-21 21:14:33.721 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring embedded WebApplicationContext
+2026-02-21 21:14:33.721 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [requestId=N/A] - Root WebApplicationContext: initialization completed in 1272 ms
+2026-02-21 21:14:33.885 INFO  o.h.jpa.internal.util.LogHelper [requestId=N/A] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-21 21:14:33.948 INFO  org.hibernate.Version [requestId=N/A] - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-02-21 21:14:33.984 INFO  o.h.c.i.RegionFactoryInitiator [requestId=N/A] - HHH000026: Second-level cache disabled
+2026-02-21 21:14:34.228 INFO  o.s.o.j.p.SpringPersistenceUnitInfo [requestId=N/A] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-21 21:14:34.253 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Starting...
+2026-02-21 21:14:34.393 INFO  com.zaxxer.hikari.pool.HikariPool [requestId=N/A] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@229749f0
+2026-02-21 21:14:34.395 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Start completed.
+2026-02-21 21:14:34.453 INFO  o.hibernate.orm.connections.pooling [requestId=N/A] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-21 21:14:35.213 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [requestId=N/A] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-21 21:14:35.301 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 21:14:35.623 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-21 21:14:35.623 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-21 21:14:35.670 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [requestId=N/A] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-21 21:14:35.902 INFO  o.s.b.a.e.web.EndpointLinksResolver [requestId=N/A] - Exposing 1 endpoint beneath base path '/actuator'
+2026-02-21 21:14:36.174 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-21 21:14:36.187 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat started on port 8080 (http) with context path '/'
+2026-02-21 21:14:36.196 INFO  c.h.backend.BackendApplication [requestId=N/A] - Started BackendApplication in 4.199 seconds (process running for 4.749)
+2026-02-21 21:14:48.857 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-21 21:14:48.858 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Initializing Servlet 'dispatcherServlet'
+2026-02-21 21:14:48.860 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Completed initialization in 1 ms
+2026-02-21 21:14:48.980 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver [requestId=1deaaa73-bdeb-415c-a082-0a92219adb11] - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.halisaha.backend.dto.AuthResponse> com.halisaha.backend.controller.AuthController.register(com.halisaha.backend.dto.RegisterRequest) with 2 errors: [Field error in object 'registerRequest' on field 'phoneNumber': rejected value [fdsfdsfdsssfsdf]; codes [Pattern.registerRequest.phoneNumber,Pattern.phoneNumber,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.phoneNumber,phoneNumber]; arguments []; default message [phoneNumber],[Ljakarta.validation.constraints.Pattern$Flag;@235e62bc,^05\d{9}$]; default message [Phone number must be in format 05XXXXXXXXX]] [Field error in object 'registerRequest' on field 'email': rejected value [fdrrsfddfgmail.com]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@827fe59,.*]; default message [Invalid email format]] ]
+2026-02-21 21:14:48.982 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=1deaaa73-bdeb-415c-a082-0a92219adb11] - POST /api/auth/register -> 400 (120 ms)
+2026-02-21 21:14:59.174 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver [requestId=14d5cf14-71ca-4a85-88f6-e375e3e192e6] - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.halisaha.backend.dto.AuthResponse> com.halisaha.backend.controller.AuthController.register(com.halisaha.backend.dto.RegisterRequest) with 2 errors: [Field error in object 'registerRequest' on field 'phoneNumber': rejected value [fdsfdsfdsssfsdf]; codes [Pattern.registerRequest.phoneNumber,Pattern.phoneNumber,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.phoneNumber,phoneNumber]; arguments []; default message [phoneNumber],[Ljakarta.validation.constraints.Pattern$Flag;@235e62bc,^05\d{9}$]; default message [Phone number must be in format 05XXXXXXXXX]] [Field error in object 'registerRequest' on field 'email': rejected value [fdrrsfddfgmail.com]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@827fe59,.*]; default message [Invalid email format]] ]
+2026-02-21 21:14:59.176 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=14d5cf14-71ca-4a85-88f6-e375e3e192e6] - POST /api/auth/register -> 400 (8 ms)
+2026-02-21 21:15:31.464 INFO  c.h.backend.service.AuthService [requestId=d42fb257-a5d6-431d-910d-15eec554c292] - User registered: hstsdhr
+2026-02-21 21:15:31.548 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=d42fb257-a5d6-431d-910d-15eec554c292] - POST /api/auth/register -> 200 (401 ms)
+2026-02-21 21:17:55.074 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-21 21:17:55.076 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Graceful shutdown complete
+2026-02-21 21:17:55.083 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 21:17:55.086 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown initiated...
+2026-02-21 21:17:55.089 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown completed.
+2026-02-21 21:18:00.316 INFO  o.h.validator.internal.util.Version [requestId=N/A] - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-21 21:18:00.359 INFO  c.h.backend.BackendApplication [requestId=N/A] - Starting BackendApplication using Java 21.0.10 with PID 33446 (/home/ulas/Halisaha_dev/target/classes started by ulas in /home/ulas/Halisaha_dev)
+2026-02-21 21:18:00.360 INFO  c.h.backend.BackendApplication [requestId=N/A] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 21:18:01.213 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-21 21:18:01.399 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Finished Spring Data repository scanning in 177 ms. Found 5 JPA repository interfaces.
+2026-02-21 21:18:01.817 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat initialized with port 8080 (http)
+2026-02-21 21:18:01.825 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-21 21:18:01.827 INFO  o.a.catalina.core.StandardService [requestId=N/A] - Starting service [Tomcat]
+2026-02-21 21:18:01.827 INFO  o.a.catalina.core.StandardEngine [requestId=N/A] - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-21 21:18:01.875 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring embedded WebApplicationContext
+2026-02-21 21:18:01.876 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [requestId=N/A] - Root WebApplicationContext: initialization completed in 1478 ms
+2026-02-21 21:18:02.038 INFO  o.h.jpa.internal.util.LogHelper [requestId=N/A] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-21 21:18:02.096 INFO  org.hibernate.Version [requestId=N/A] - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-02-21 21:18:02.129 INFO  o.h.c.i.RegionFactoryInitiator [requestId=N/A] - HHH000026: Second-level cache disabled
+2026-02-21 21:18:02.363 INFO  o.s.o.j.p.SpringPersistenceUnitInfo [requestId=N/A] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-21 21:18:02.387 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Starting...
+2026-02-21 21:18:02.520 INFO  com.zaxxer.hikari.pool.HikariPool [requestId=N/A] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@26888c31
+2026-02-21 21:18:02.521 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Start completed.
+2026-02-21 21:18:02.570 INFO  o.hibernate.orm.connections.pooling [requestId=N/A] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-21 21:18:03.303 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [requestId=N/A] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-21 21:18:03.390 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 21:18:03.722 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-21 21:18:03.722 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-21 21:18:03.770 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [requestId=N/A] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-21 21:18:04.013 INFO  o.s.b.a.e.web.EndpointLinksResolver [requestId=N/A] - Exposing 1 endpoint beneath base path '/actuator'
+2026-02-21 21:18:04.282 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-21 21:18:04.293 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat started on port 8080 (http) with context path '/'
+2026-02-21 21:18:04.302 INFO  c.h.backend.BackendApplication [requestId=N/A] - Started BackendApplication in 4.397 seconds (process running for 5.048)
+2026-02-21 21:18:09.470 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-21 21:18:09.471 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Initializing Servlet 'dispatcherServlet'
+2026-02-21 21:18:09.472 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Completed initialization in 1 ms
+2026-02-21 21:18:09.697 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=35ace5b4-0034-42ca-a494-cf09ad04cf68] - POST /api/auth/register -> 409 (222 ms)
+2026-02-21 21:18:22.619 INFO  c.h.backend.service.AuthService [requestId=55726ff0-c299-4003-ad03-06b44578df54] - User registered: DSASDSDA
+2026-02-21 21:18:22.669 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=55726ff0-c299-4003-ad03-06b44578df54] - POST /api/auth/register -> 200 (165 ms)
+2026-02-21 21:19:41.944 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver [requestId=e6cf85c6-c1ea-4222-b30b-adf67fcc254a] - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.halisaha.backend.dto.AuthResponse> com.halisaha.backend.controller.AuthController.register(com.halisaha.backend.dto.RegisterRequest): [Field error in object 'registerRequest' on field 'email': rejected value [fdrrsfSSddfgmail.com]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@1c999b85,.*]; default message [Invalid email format]] ]
+2026-02-21 21:19:41.946 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=e6cf85c6-c1ea-4222-b30b-adf67fcc254a] - POST /api/auth/register -> 400 (15 ms)
+2026-02-21 21:19:52.568 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver [requestId=0b1c54c2-6512-4642-a206-1847a1b608b7] - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.halisaha.backend.dto.AuthResponse> com.halisaha.backend.controller.AuthController.register(com.halisaha.backend.dto.RegisterRequest): [Field error in object 'registerRequest' on field 'email': rejected value [fdrrsfSSddfgmail.com]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@1c999b85,.*]; default message [Invalid email format]] ]
+2026-02-21 21:19:52.569 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=0b1c54c2-6512-4642-a206-1847a1b608b7] - POST /api/auth/register -> 400 (5 ms)
+2026-02-21 21:25:50.903 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver [requestId=d9ddacc6-e38c-4a9b-8e83-ad64ea04871e] - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.halisaha.backend.dto.AuthResponse> com.halisaha.backend.controller.AuthController.register(com.halisaha.backend.dto.RegisterRequest): [Field error in object 'registerRequest' on field 'email': rejected value [fdrrsfSSddfgmail.com]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@1c999b85,.*]; default message [Invalid email format]] ]
+2026-02-21 21:25:50.904 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=d9ddacc6-e38c-4a9b-8e83-ad64ea04871e] - POST /api/auth/register -> 400 (7 ms)
+2026-02-21 21:25:52.185 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver [requestId=658e4308-bdaa-422b-a5ef-4222c2298646] - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.halisaha.backend.dto.AuthResponse> com.halisaha.backend.controller.AuthController.register(com.halisaha.backend.dto.RegisterRequest): [Field error in object 'registerRequest' on field 'email': rejected value [fdrrsfSSddfgmail.com]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@1c999b85,.*]; default message [Invalid email format]] ]
+2026-02-21 21:25:52.185 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=658e4308-bdaa-422b-a5ef-4222c2298646] - POST /api/auth/register -> 400 (4 ms)
+2026-02-21 21:26:04.431 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-21 21:26:04.435 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Graceful shutdown complete
+2026-02-21 21:26:04.443 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 21:26:04.446 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown initiated...
+2026-02-21 21:26:04.449 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown completed.
+2026-02-21 21:26:11.631 INFO  o.h.validator.internal.util.Version [requestId=N/A] - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-21 21:26:11.678 INFO  c.h.backend.BackendApplication [requestId=N/A] - Starting BackendApplication using Java 21.0.10 with PID 36059 (/home/ulas/Halisaha_dev/target/classes started by ulas in /home/ulas/Halisaha_dev)
+2026-02-21 21:26:11.679 INFO  c.h.backend.BackendApplication [requestId=N/A] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 21:26:12.591 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-21 21:26:12.639 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Finished Spring Data repository scanning in 40 ms. Found 5 JPA repository interfaces.
+2026-02-21 21:26:13.225 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat initialized with port 8080 (http)
+2026-02-21 21:26:13.232 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-21 21:26:13.234 INFO  o.a.catalina.core.StandardService [requestId=N/A] - Starting service [Tomcat]
+2026-02-21 21:26:13.234 INFO  o.a.catalina.core.StandardEngine [requestId=N/A] - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-21 21:26:13.285 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring embedded WebApplicationContext
+2026-02-21 21:26:13.289 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [requestId=N/A] - Root WebApplicationContext: initialization completed in 1567 ms
+2026-02-21 21:26:13.447 INFO  o.h.jpa.internal.util.LogHelper [requestId=N/A] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-21 21:26:13.511 INFO  org.hibernate.Version [requestId=N/A] - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-02-21 21:26:13.548 INFO  o.h.c.i.RegionFactoryInitiator [requestId=N/A] - HHH000026: Second-level cache disabled
+2026-02-21 21:26:13.814 INFO  o.s.o.j.p.SpringPersistenceUnitInfo [requestId=N/A] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-21 21:26:13.839 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Starting...
+2026-02-21 21:26:13.966 INFO  com.zaxxer.hikari.pool.HikariPool [requestId=N/A] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b74902c
+2026-02-21 21:26:13.968 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Start completed.
+2026-02-21 21:26:14.020 INFO  o.hibernate.orm.connections.pooling [requestId=N/A] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-21 21:26:14.798 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [requestId=N/A] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-21 21:26:14.881 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 21:26:15.153 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-21 21:26:15.153 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-21 21:26:15.198 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [requestId=N/A] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-21 21:26:15.447 INFO  o.s.b.a.e.web.EndpointLinksResolver [requestId=N/A] - Exposing 1 endpoint beneath base path '/actuator'
+2026-02-21 21:26:15.723 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-21 21:26:15.734 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat started on port 8080 (http) with context path '/'
+2026-02-21 21:26:15.743 INFO  c.h.backend.BackendApplication [requestId=N/A] - Started BackendApplication in 4.495 seconds (process running for 5.074)
+2026-02-21 21:26:34.248 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-21 21:26:34.248 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Initializing Servlet 'dispatcherServlet'
+2026-02-21 21:26:34.251 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Completed initialization in 3 ms
+2026-02-21 21:26:34.386 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver [requestId=bc3eb81a-734b-4942-a2b2-4bef241622a6] - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.halisaha.backend.dto.AuthResponse> com.halisaha.backend.controller.AuthController.register(com.halisaha.backend.dto.RegisterRequest): [Field error in object 'registerRequest' on field 'email': rejected value [fdrrsfSSddfgmail.com]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@491fc5d,.*]; default message [Invalid email format]] ]
+2026-02-21 21:26:34.389 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=bc3eb81a-734b-4942-a2b2-4bef241622a6] - POST /api/auth/register -> 400 (136 ms)
+2026-02-21 21:26:35.870 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver [requestId=0a3a1b86-1a85-45ad-b75a-9ccc5afb22cb] - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.halisaha.backend.dto.AuthResponse> com.halisaha.backend.controller.AuthController.register(com.halisaha.backend.dto.RegisterRequest): [Field error in object 'registerRequest' on field 'email': rejected value [fdrrsfSSddfgmail.com]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@491fc5d,.*]; default message [Invalid email format]] ]
+2026-02-21 21:26:35.871 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=0a3a1b86-1a85-45ad-b75a-9ccc5afb22cb] - POST /api/auth/register -> 400 (5 ms)
+2026-02-21 21:26:48.348 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver [requestId=0c4acd7e-5a09-4a5b-a344-cc6ad2bf1979] - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.halisaha.backend.dto.AuthResponse> com.halisaha.backend.controller.AuthController.register(com.halisaha.backend.dto.RegisterRequest): [Field error in object 'registerRequest' on field 'email': rejected value [fdrrsfSSddfgmail.com]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@491fc5d,.*]; default message [Invalid email format]] ]
+2026-02-21 21:26:48.349 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=0c4acd7e-5a09-4a5b-a344-cc6ad2bf1979] - POST /api/auth/register -> 400 (4 ms)
+2026-02-21 21:28:24.813 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-21 21:28:24.817 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Graceful shutdown complete
+2026-02-21 21:28:24.824 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 21:28:24.828 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown initiated...
+2026-02-21 21:28:24.833 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown completed.
+2026-02-21 21:28:41.099 INFO  o.h.validator.internal.util.Version [requestId=N/A] - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-21 21:28:41.148 INFO  c.h.backend.BackendApplication [requestId=N/A] - Starting BackendApplication using Java 21.0.10 with PID 37063 (/home/ulas/Halisaha_dev/target/classes started by ulas in /home/ulas/Halisaha_dev)
+2026-02-21 21:28:41.149 INFO  c.h.backend.BackendApplication [requestId=N/A] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 21:28:42.034 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-21 21:28:42.086 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Finished Spring Data repository scanning in 43 ms. Found 5 JPA repository interfaces.
+2026-02-21 21:28:42.501 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat initialized with port 8080 (http)
+2026-02-21 21:28:42.508 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-21 21:28:42.510 INFO  o.a.catalina.core.StandardService [requestId=N/A] - Starting service [Tomcat]
+2026-02-21 21:28:42.510 INFO  o.a.catalina.core.StandardEngine [requestId=N/A] - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-21 21:28:42.555 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring embedded WebApplicationContext
+2026-02-21 21:28:42.556 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [requestId=N/A] - Root WebApplicationContext: initialization completed in 1370 ms
+2026-02-21 21:28:42.699 INFO  o.h.jpa.internal.util.LogHelper [requestId=N/A] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-21 21:28:42.763 INFO  org.hibernate.Version [requestId=N/A] - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-02-21 21:28:42.799 INFO  o.h.c.i.RegionFactoryInitiator [requestId=N/A] - HHH000026: Second-level cache disabled
+2026-02-21 21:28:43.050 INFO  o.s.o.j.p.SpringPersistenceUnitInfo [requestId=N/A] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-21 21:28:43.076 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Starting...
+2026-02-21 21:28:43.201 INFO  com.zaxxer.hikari.pool.HikariPool [requestId=N/A] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@26888c31
+2026-02-21 21:28:43.202 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Start completed.
+2026-02-21 21:28:43.255 INFO  o.hibernate.orm.connections.pooling [requestId=N/A] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-21 21:28:44.029 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [requestId=N/A] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-21 21:28:44.118 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 21:28:44.392 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-21 21:28:44.393 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-21 21:28:44.436 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [requestId=N/A] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-21 21:28:44.708 INFO  o.s.b.a.e.web.EndpointLinksResolver [requestId=N/A] - Exposing 1 endpoint beneath base path '/actuator'
+2026-02-21 21:28:44.992 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-21 21:28:45.003 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat started on port 8080 (http) with context path '/'
+2026-02-21 21:28:45.013 INFO  c.h.backend.BackendApplication [requestId=N/A] - Started BackendApplication in 4.312 seconds (process running for 4.865)
+2026-02-21 21:28:49.893 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-21 21:28:49.894 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Initializing Servlet 'dispatcherServlet'
+2026-02-21 21:28:49.895 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Completed initialization in 1 ms
+2026-02-21 21:28:50.033 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=e1216fd4-a709-447e-85cc-1008c0c75f8f] - POST /api/auth/register -> 400 (136 ms)
+2026-02-21 21:29:23.192 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-21 21:29:23.194 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Graceful shutdown complete
+2026-02-21 21:29:23.200 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 21:29:23.202 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown initiated...
+2026-02-21 21:29:23.204 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown completed.
+2026-02-21 21:29:29.192 INFO  o.h.validator.internal.util.Version [requestId=N/A] - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-21 21:29:29.222 INFO  c.h.backend.BackendApplication [requestId=N/A] - Starting BackendApplication using Java 21.0.10 with PID 38650 (/home/ulas/Halisaha_dev/target/classes started by ulas in /home/ulas/Halisaha_dev)
+2026-02-21 21:29:29.222 INFO  c.h.backend.BackendApplication [requestId=N/A] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 21:29:29.842 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-21 21:29:29.882 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Finished Spring Data repository scanning in 33 ms. Found 5 JPA repository interfaces.
+2026-02-21 21:29:30.202 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat initialized with port 8080 (http)
+2026-02-21 21:29:30.209 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-21 21:29:30.210 INFO  o.a.catalina.core.StandardService [requestId=N/A] - Starting service [Tomcat]
+2026-02-21 21:29:30.211 INFO  o.a.catalina.core.StandardEngine [requestId=N/A] - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-21 21:29:30.248 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring embedded WebApplicationContext
+2026-02-21 21:29:30.252 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [requestId=N/A] - Root WebApplicationContext: initialization completed in 997 ms
+2026-02-21 21:29:30.376 INFO  o.h.jpa.internal.util.LogHelper [requestId=N/A] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-21 21:29:30.403 INFO  org.hibernate.Version [requestId=N/A] - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-02-21 21:29:30.421 INFO  o.h.c.i.RegionFactoryInitiator [requestId=N/A] - HHH000026: Second-level cache disabled
+2026-02-21 21:29:30.578 INFO  o.s.o.j.p.SpringPersistenceUnitInfo [requestId=N/A] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-21 21:29:30.596 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Starting...
+2026-02-21 21:29:30.697 INFO  com.zaxxer.hikari.pool.HikariPool [requestId=N/A] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4e030feb
+2026-02-21 21:29:30.699 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Start completed.
+2026-02-21 21:29:30.739 INFO  o.hibernate.orm.connections.pooling [requestId=N/A] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-21 21:29:31.412 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [requestId=N/A] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-21 21:29:31.492 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 21:29:31.725 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-21 21:29:31.726 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-21 21:29:31.775 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [requestId=N/A] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-21 21:29:31.999 INFO  o.s.b.a.e.web.EndpointLinksResolver [requestId=N/A] - Exposing 1 endpoint beneath base path '/actuator'
+2026-02-21 21:29:32.259 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-21 21:29:32.269 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat started on port 8080 (http) with context path '/'
+2026-02-21 21:29:32.278 INFO  c.h.backend.BackendApplication [requestId=N/A] - Started BackendApplication in 3.481 seconds (process running for 3.796)
+2026-02-21 21:29:36.362 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-21 21:29:36.362 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Initializing Servlet 'dispatcherServlet'
+2026-02-21 21:29:36.365 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Completed initialization in 3 ms
+2026-02-21 21:29:36.499 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=5ffa5351-1513-475b-b5c7-eda47ce66574] - POST /api/auth/register -> 400 (132 ms)
+2026-02-21 21:29:37.369 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=548b44b7-3a21-4ca7-819d-d0cdf4f79305] - POST /api/auth/register -> 400 (5 ms)
+2026-02-21 21:29:38.237 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=4b1a816d-6602-4ce3-badd-c7c73d7fe56e] - POST /api/auth/register -> 400 (6 ms)
+2026-02-21 21:29:39.129 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=d46f7421-f450-4a14-a046-ab185a497487] - POST /api/auth/register -> 400 (5 ms)
+2026-02-21 21:29:40.016 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=d674fa89-8441-4732-b9bd-a477ddda192e] - POST /api/auth/register -> 400 (6 ms)
+2026-02-21 21:29:41.677 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=15b23adf-4839-47a5-8513-b18880e1b167] - POST /api/auth/register -> 400 (16 ms)
+2026-02-21 21:29:43.497 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=2d9eba55-aff1-454c-b2d9-1a885ec1689c] - POST /api/auth/register -> 400 (4 ms)
+2026-02-21 21:31:38.565 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-21 21:31:38.570 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Graceful shutdown complete
+2026-02-21 21:31:38.580 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 21:31:38.586 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown initiated...
+2026-02-21 21:31:38.591 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown completed.
+2026-02-21 21:31:46.405 INFO  o.h.validator.internal.util.Version [requestId=N/A] - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-21 21:31:46.439 INFO  c.h.backend.BackendApplication [requestId=N/A] - Starting BackendApplication using Java 21.0.10 with PID 42311 (/home/ulas/Halisaha_dev/target/classes started by ulas in /home/ulas/Halisaha_dev)
+2026-02-21 21:31:46.440 INFO  c.h.backend.BackendApplication [requestId=N/A] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 21:31:47.105 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-21 21:31:47.147 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Finished Spring Data repository scanning in 36 ms. Found 5 JPA repository interfaces.
+2026-02-21 21:31:47.492 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat initialized with port 8080 (http)
+2026-02-21 21:31:47.501 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-21 21:31:47.502 INFO  o.a.catalina.core.StandardService [requestId=N/A] - Starting service [Tomcat]
+2026-02-21 21:31:47.503 INFO  o.a.catalina.core.StandardEngine [requestId=N/A] - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-21 21:31:47.547 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring embedded WebApplicationContext
+2026-02-21 21:31:47.548 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [requestId=N/A] - Root WebApplicationContext: initialization completed in 1074 ms
+2026-02-21 21:31:47.680 INFO  o.h.jpa.internal.util.LogHelper [requestId=N/A] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-21 21:31:47.709 INFO  org.hibernate.Version [requestId=N/A] - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-02-21 21:31:47.728 INFO  o.h.c.i.RegionFactoryInitiator [requestId=N/A] - HHH000026: Second-level cache disabled
+2026-02-21 21:31:47.916 INFO  o.s.o.j.p.SpringPersistenceUnitInfo [requestId=N/A] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-21 21:31:47.934 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Starting...
+2026-02-21 21:31:48.036 INFO  com.zaxxer.hikari.pool.HikariPool [requestId=N/A] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@756200d1
+2026-02-21 21:31:48.037 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Start completed.
+2026-02-21 21:31:48.080 INFO  o.hibernate.orm.connections.pooling [requestId=N/A] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-21 21:31:48.793 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [requestId=N/A] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-21 21:31:48.879 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 21:31:49.121 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-21 21:31:49.122 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-21 21:31:49.173 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [requestId=N/A] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-21 21:31:49.425 INFO  o.s.b.a.e.web.EndpointLinksResolver [requestId=N/A] - Exposing 1 endpoint beneath base path '/actuator'
+2026-02-21 21:31:49.697 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-21 21:31:49.708 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat started on port 8080 (http) with context path '/'
+2026-02-21 21:31:49.717 INFO  c.h.backend.BackendApplication [requestId=N/A] - Started BackendApplication in 3.629 seconds (process running for 4.044)
+2026-02-21 21:31:52.379 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-21 21:31:52.379 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Initializing Servlet 'dispatcherServlet'
+2026-02-21 21:31:52.381 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Completed initialization in 2 ms
+2026-02-21 21:31:52.498 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver [requestId=697d37fe-e2cf-4b9c-b517-4bd772165696] - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.halisaha.backend.dto.AuthResponse> com.halisaha.backend.controller.AuthController.register(com.halisaha.backend.dto.RegisterRequest): [Field error in object 'registerRequest' on field 'email': rejected value [fdrrsfSSddfgmail.com]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@73bf7f2a,.*]; default message [Invalid email format]] ]
+2026-02-21 21:31:52.500 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=697d37fe-e2cf-4b9c-b517-4bd772165696] - POST /api/auth/register -> 400 (117 ms)
+2026-02-21 21:36:17.348 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-21 21:36:17.353 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Graceful shutdown complete
+2026-02-21 21:36:17.363 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 21:36:17.368 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown initiated...
+2026-02-21 21:36:17.374 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown completed.
+2026-02-21 21:36:22.210 INFO  o.h.validator.internal.util.Version [requestId=N/A] - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-21 21:36:22.242 INFO  c.h.backend.BackendApplication [requestId=N/A] - Starting BackendApplication using Java 21.0.10 with PID 44088 (/home/ulas/Halisaha_dev/target/classes started by ulas in /home/ulas/Halisaha_dev)
+2026-02-21 21:36:22.243 INFO  c.h.backend.BackendApplication [requestId=N/A] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 21:36:22.897 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-21 21:36:22.942 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Finished Spring Data repository scanning in 38 ms. Found 5 JPA repository interfaces.
+2026-02-21 21:36:23.290 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat initialized with port 8080 (http)
+2026-02-21 21:36:23.297 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-21 21:36:23.298 INFO  o.a.catalina.core.StandardService [requestId=N/A] - Starting service [Tomcat]
+2026-02-21 21:36:23.298 INFO  o.a.catalina.core.StandardEngine [requestId=N/A] - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-21 21:36:23.347 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring embedded WebApplicationContext
+2026-02-21 21:36:23.348 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [requestId=N/A] - Root WebApplicationContext: initialization completed in 1071 ms
+2026-02-21 21:36:23.486 INFO  o.h.jpa.internal.util.LogHelper [requestId=N/A] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-21 21:36:23.515 INFO  org.hibernate.Version [requestId=N/A] - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-02-21 21:36:23.536 INFO  o.h.c.i.RegionFactoryInitiator [requestId=N/A] - HHH000026: Second-level cache disabled
+2026-02-21 21:36:23.693 INFO  o.s.o.j.p.SpringPersistenceUnitInfo [requestId=N/A] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-21 21:36:23.711 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Starting...
+2026-02-21 21:36:23.817 INFO  com.zaxxer.hikari.pool.HikariPool [requestId=N/A] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e489ac1
+2026-02-21 21:36:23.819 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Start completed.
+2026-02-21 21:36:23.862 INFO  o.hibernate.orm.connections.pooling [requestId=N/A] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-21 21:36:24.549 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [requestId=N/A] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-21 21:36:24.656 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 21:36:24.902 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-21 21:36:24.903 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-21 21:36:24.946 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [requestId=N/A] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-21 21:36:25.184 INFO  o.s.b.a.e.web.EndpointLinksResolver [requestId=N/A] - Exposing 1 endpoint beneath base path '/actuator'
+2026-02-21 21:36:25.451 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-21 21:36:25.463 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat started on port 8080 (http) with context path '/'
+2026-02-21 21:36:25.473 INFO  c.h.backend.BackendApplication [requestId=N/A] - Started BackendApplication in 3.579 seconds (process running for 3.987)
+2026-02-21 21:36:32.880 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-21 21:36:32.880 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Initializing Servlet 'dispatcherServlet'
+2026-02-21 21:36:32.882 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Completed initialization in 2 ms
+2026-02-21 21:36:33.023 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=6fa4dfa6-ed9f-4a7d-b587-f38aaf04acd6] - POST /api/auth/register -> 400 (139 ms)
+2026-02-21 21:36:40.866 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=5e56b872-263d-4791-8dc7-7a3d0f8daba1] - POST /api/auth/login -> 401 (230 ms)
+2026-02-21 21:36:47.153 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=3aee9c30-89bd-424d-a50b-9cab1549a5d4] - POST /api/auth/login -> 401 (77 ms)
+2026-02-21 21:36:52.645 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=1210d17d-eb97-4c06-844c-fe5f71a9aaa8] - POST /api/auth/register -> 400 (6 ms)
+2026-02-21 21:37:00.317 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=5e67c079-bfe8-4a40-904d-d31d4cb14336] - POST /api/auth/register -> 409 (26 ms)
+2026-02-21 21:37:06.882 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=b180d0bb-6743-4631-8873-ef6fa14e9967] - POST /api/auth/register -> 409 (10 ms)
+2026-02-21 21:37:11.515 INFO  c.h.backend.service.AuthService [requestId=7e3eeb27-e539-4d10-90cd-2429f6bf395e] - User registered: DSADSDSDA
+2026-02-21 21:37:11.581 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=7e3eeb27-e539-4d10-90cd-2429f6bf395e] - POST /api/auth/register -> 200 (174 ms)
+2026-02-21 21:37:38.330 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=86b85f12-cccf-4a1e-b0e9-effd2a99d054] - POST /api/auth/login -> 401 (72 ms)
+2026-02-21 21:38:02.581 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=bfa70364-f496-4964-82d4-8a2fdf304569] - POST /api/auth/login -> 401 (5 ms)
+2026-02-21 21:38:18.580 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=2448558e-4724-40e1-b008-c5504f04b790] - POST /api/auth/login -> 401 (5 ms)
+2026-02-21 21:38:45.461 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=304d9626-1f96-4c71-b3f3-d2e82babe0f3] - POST /api/auth/login -> 200 (89 ms)
+2026-02-21 21:39:05.016 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=f7828e58-084b-4fae-83dd-f9cec03af738] - POST /api/auth/login -> 200 (81 ms)
+2026-02-21 21:39:28.285 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=7723e1d3-9e49-4d83-81d3-693a3d92b51a] - POST /api/auth/login -> 400 (26 ms)
+2026-02-21 21:39:40.359 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-21 21:39:40.362 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Graceful shutdown complete
+2026-02-21 21:39:40.369 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 21:39:40.372 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown initiated...
+2026-02-21 21:39:40.375 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown completed.
+2026-02-21 21:42:57.231 INFO  o.h.validator.internal.util.Version [requestId=N/A] - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-21 21:42:57.274 INFO  c.h.backend.BackendApplication [requestId=N/A] - Starting BackendApplication using Java 21.0.10 with PID 44952 (/home/ulas/Halisaha_dev/target/classes started by ulas in /home/ulas/Halisaha_dev)
+2026-02-21 21:42:57.274 INFO  c.h.backend.BackendApplication [requestId=N/A] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 21:42:58.198 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-21 21:42:58.251 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Finished Spring Data repository scanning in 44 ms. Found 5 JPA repository interfaces.
+2026-02-21 21:42:58.670 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat initialized with port 8080 (http)
+2026-02-21 21:42:58.678 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-21 21:42:58.679 INFO  o.a.catalina.core.StandardService [requestId=N/A] - Starting service [Tomcat]
+2026-02-21 21:42:58.680 INFO  o.a.catalina.core.StandardEngine [requestId=N/A] - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-21 21:42:58.727 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring embedded WebApplicationContext
+2026-02-21 21:42:58.728 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [requestId=N/A] - Root WebApplicationContext: initialization completed in 1417 ms
+2026-02-21 21:42:58.906 INFO  o.h.jpa.internal.util.LogHelper [requestId=N/A] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-21 21:42:58.973 INFO  org.hibernate.Version [requestId=N/A] - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-02-21 21:42:59.011 INFO  o.h.c.i.RegionFactoryInitiator [requestId=N/A] - HHH000026: Second-level cache disabled
+2026-02-21 21:42:59.243 INFO  o.s.o.j.p.SpringPersistenceUnitInfo [requestId=N/A] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-21 21:42:59.267 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Starting...
+2026-02-21 21:42:59.406 INFO  com.zaxxer.hikari.pool.HikariPool [requestId=N/A] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7337bd2e
+2026-02-21 21:42:59.408 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Start completed.
+2026-02-21 21:42:59.472 INFO  o.hibernate.orm.connections.pooling [requestId=N/A] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-21 21:43:00.361 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [requestId=N/A] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-21 21:43:00.451 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 21:43:00.715 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-21 21:43:00.716 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-21 21:43:00.762 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [requestId=N/A] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-21 21:43:01.044 INFO  o.s.b.a.e.web.EndpointLinksResolver [requestId=N/A] - Exposing 1 endpoint beneath base path '/actuator'
+2026-02-21 21:43:01.319 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-21 21:43:01.338 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat started on port 8080 (http) with context path '/'
+2026-02-21 21:43:01.347 INFO  c.h.backend.BackendApplication [requestId=N/A] - Started BackendApplication in 4.488 seconds (process running for 5.043)
+2026-02-21 21:48:05.254 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-21 21:48:05.255 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Initializing Servlet 'dispatcherServlet'
+2026-02-21 21:48:05.257 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Completed initialization in 2 ms
+2026-02-21 21:48:05.787 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=ad1d3f27-1efb-4205-8e41-8b07d36b8f3e] - POST /api/auth/login -> 401 (527 ms)
+2026-02-21 21:48:36.455 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=98bae330-eba4-4ef4-9f43-2e2a2b425864] - POST /api/auth/register -> 409 (31 ms)
+2026-02-21 21:48:46.885 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=f4242a53-137d-4738-b3e8-7bb63d7b49dd] - POST /api/auth/login -> 200 (191 ms)
+2026-02-21 21:53:48.715 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-21 21:53:48.719 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Graceful shutdown complete
+2026-02-21 21:53:48.726 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 21:53:48.731 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown initiated...
+2026-02-21 21:53:48.734 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown completed.
+2026-02-21 22:00:55.041 INFO  o.h.validator.internal.util.Version [requestId=N/A] - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-21 22:00:55.082 INFO  c.h.backend.BackendApplication [requestId=N/A] - Starting BackendApplication using Java 21.0.10 with PID 48626 (/home/ulas/Halisaha_dev/target/classes started by ulas in /home/ulas/Halisaha_dev)
+2026-02-21 22:00:55.083 INFO  c.h.backend.BackendApplication [requestId=N/A] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 22:00:56.022 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-21 22:00:56.080 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Finished Spring Data repository scanning in 48 ms. Found 5 JPA repository interfaces.
+2026-02-21 22:00:56.471 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat initialized with port 8080 (http)
+2026-02-21 22:00:56.477 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-21 22:00:56.479 INFO  o.a.catalina.core.StandardService [requestId=N/A] - Starting service [Tomcat]
+2026-02-21 22:00:56.479 INFO  o.a.catalina.core.StandardEngine [requestId=N/A] - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-21 22:00:56.526 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring embedded WebApplicationContext
+2026-02-21 22:00:56.527 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [requestId=N/A] - Root WebApplicationContext: initialization completed in 1408 ms
+2026-02-21 22:00:56.702 INFO  o.h.jpa.internal.util.LogHelper [requestId=N/A] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-21 22:00:56.904 INFO  org.hibernate.Version [requestId=N/A] - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-02-21 22:00:56.943 INFO  o.h.c.i.RegionFactoryInitiator [requestId=N/A] - HHH000026: Second-level cache disabled
+2026-02-21 22:00:57.185 INFO  o.s.o.j.p.SpringPersistenceUnitInfo [requestId=N/A] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-21 22:00:57.213 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Starting...
+2026-02-21 22:00:57.354 INFO  com.zaxxer.hikari.pool.HikariPool [requestId=N/A] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@194e78af
+2026-02-21 22:00:57.355 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Start completed.
+2026-02-21 22:00:57.419 INFO  o.hibernate.orm.connections.pooling [requestId=N/A] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-21 22:00:58.217 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [requestId=N/A] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-21 22:00:58.313 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 22:00:58.599 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-21 22:00:58.600 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-21 22:00:58.662 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [requestId=N/A] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-21 22:00:58.994 INFO  o.s.b.a.e.web.EndpointLinksResolver [requestId=N/A] - Exposing 1 endpoint beneath base path '/actuator'
+2026-02-21 22:00:59.295 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-21 22:00:59.307 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat started on port 8080 (http) with context path '/'
+2026-02-21 22:00:59.317 INFO  c.h.backend.BackendApplication [requestId=N/A] - Started BackendApplication in 4.665 seconds (process running for 5.207)
+2026-02-21 22:01:17.269 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-21 22:01:17.270 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Initializing Servlet 'dispatcherServlet'
+2026-02-21 22:01:17.271 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Completed initialization in 1 ms
+2026-02-21 22:01:17.476 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=9a121058-9115-45fc-90a4-20958f7e80e9] - POST /api/auth/register -> 409 (203 ms)
+2026-02-21 22:01:24.101 INFO  c.h.backend.service.AuthService [requestId=7d55f34e-e3da-48c4-9f49-a5ae1f97ad66] - User mete registered: 
+2026-02-21 22:01:24.103 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=7d55f34e-e3da-48c4-9f49-a5ae1f97ad66] - POST /api/auth/register -> 201 (114 ms)
+2026-02-21 22:01:45.271 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-21 22:01:45.274 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Graceful shutdown complete
+2026-02-21 22:01:45.281 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 22:01:45.284 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown initiated...
+2026-02-21 22:01:45.286 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown completed.
+2026-02-21 22:02:22.913 INFO  o.h.validator.internal.util.Version [requestId=N/A] - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-21 22:02:22.956 INFO  c.h.backend.BackendApplication [requestId=N/A] - Starting BackendApplication using Java 21.0.10 with PID 48922 (/home/ulas/Halisaha_dev/target/classes started by ulas in /home/ulas/Halisaha_dev)
+2026-02-21 22:02:22.957 INFO  c.h.backend.BackendApplication [requestId=N/A] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 22:02:23.790 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-21 22:02:23.850 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Finished Spring Data repository scanning in 43 ms. Found 5 JPA repository interfaces.
+2026-02-21 22:02:24.380 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat initialized with port 8080 (http)
+2026-02-21 22:02:24.387 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-21 22:02:24.389 INFO  o.a.catalina.core.StandardService [requestId=N/A] - Starting service [Tomcat]
+2026-02-21 22:02:24.389 INFO  o.a.catalina.core.StandardEngine [requestId=N/A] - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-21 22:02:24.434 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring embedded WebApplicationContext
+2026-02-21 22:02:24.435 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [requestId=N/A] - Root WebApplicationContext: initialization completed in 1439 ms
+2026-02-21 22:02:24.590 INFO  o.h.jpa.internal.util.LogHelper [requestId=N/A] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-21 22:02:24.657 INFO  org.hibernate.Version [requestId=N/A] - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-02-21 22:02:24.693 INFO  o.h.c.i.RegionFactoryInitiator [requestId=N/A] - HHH000026: Second-level cache disabled
+2026-02-21 22:02:24.930 INFO  o.s.o.j.p.SpringPersistenceUnitInfo [requestId=N/A] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-21 22:02:24.966 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Starting...
+2026-02-21 22:02:25.099 INFO  com.zaxxer.hikari.pool.HikariPool [requestId=N/A] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4e030feb
+2026-02-21 22:02:25.100 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Start completed.
+2026-02-21 22:02:25.155 INFO  o.hibernate.orm.connections.pooling [requestId=N/A] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-21 22:02:25.900 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [requestId=N/A] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-21 22:02:25.991 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 22:02:26.294 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-21 22:02:26.295 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-21 22:02:26.341 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [requestId=N/A] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-21 22:02:26.604 INFO  o.s.b.a.e.web.EndpointLinksResolver [requestId=N/A] - Exposing 1 endpoint beneath base path '/actuator'
+2026-02-21 22:02:26.871 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-21 22:02:26.884 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat started on port 8080 (http) with context path '/'
+2026-02-21 22:02:26.893 INFO  c.h.backend.BackendApplication [requestId=N/A] - Started BackendApplication in 4.354 seconds (process running for 4.891)
+2026-02-21 22:02:36.777 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-21 22:02:36.778 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Initializing Servlet 'dispatcherServlet'
+2026-02-21 22:02:36.780 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Completed initialization in 2 ms
+2026-02-21 22:02:36.954 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=edfaf413-cbbb-47d4-9b5b-96fde7c8dd8c] - POST /api/auth/register -> 400 (169 ms)
+2026-02-21 22:05:16.709 INFO  c.h.backend.service.AuthService [requestId=732e555d-8180-44a1-8546-bae057502cfc] - JWT Token is genereated for the User called mete
+2026-02-21 22:05:16.718 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=732e555d-8180-44a1-8546-bae057502cfc] - POST /api/auth/login -> 200 (387 ms)
+2026-02-21 22:39:09.317 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-21 22:39:09.331 INFO  o.s.b.w.e.tomcat.GracefulShutdown [requestId=N/A] - Graceful shutdown complete
+2026-02-21 22:39:09.354 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 22:39:09.369 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown initiated...
+2026-02-21 22:39:09.377 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown completed.
+2026-02-21 22:47:44.939 INFO  o.h.validator.internal.util.Version [requestId=N/A] - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-21 22:47:44.985 INFO  c.h.backend.BackendApplication [requestId=N/A] - Starting BackendApplication using Java 21.0.10 with PID 52872 (/home/ulas/Halisaha_dev/target/classes started by ulas in /home/ulas/Halisaha_dev)
+2026-02-21 22:47:44.986 INFO  c.h.backend.BackendApplication [requestId=N/A] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 22:47:45.949 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-21 22:47:46.002 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Finished Spring Data repository scanning in 43 ms. Found 5 JPA repository interfaces.
+2026-02-21 22:47:46.539 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat initialized with port 8080 (http)
+2026-02-21 22:47:46.547 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-21 22:47:46.549 INFO  o.a.catalina.core.StandardService [requestId=N/A] - Starting service [Tomcat]
+2026-02-21 22:47:46.549 INFO  o.a.catalina.core.StandardEngine [requestId=N/A] - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-21 22:47:46.586 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring embedded WebApplicationContext
+2026-02-21 22:47:46.586 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [requestId=N/A] - Root WebApplicationContext: initialization completed in 1562 ms
+2026-02-21 22:47:46.754 INFO  o.h.jpa.internal.util.LogHelper [requestId=N/A] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-21 22:47:46.822 INFO  org.hibernate.Version [requestId=N/A] - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-02-21 22:47:46.860 INFO  o.h.c.i.RegionFactoryInitiator [requestId=N/A] - HHH000026: Second-level cache disabled
+2026-02-21 22:47:47.102 INFO  o.s.o.j.p.SpringPersistenceUnitInfo [requestId=N/A] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-21 22:47:47.128 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Starting...
+2026-02-21 22:47:47.263 INFO  com.zaxxer.hikari.pool.HikariPool [requestId=N/A] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@19e8fe55
+2026-02-21 22:47:47.265 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Start completed.
+2026-02-21 22:47:47.335 INFO  o.hibernate.orm.connections.pooling [requestId=N/A] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-21 22:47:48.089 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [requestId=N/A] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-21 22:47:48.197 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 22:47:48.490 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-21 22:47:48.490 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-21 22:47:48.516 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [requestId=N/A] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationController' defined in file [/home/ulas/Halisaha_dev/target/classes/com/halisaha/backend/controller/ReservationController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'reservationService' defined in file [/home/ulas/Halisaha_dev/target/classes/com/halisaha/backend/service/ReservationService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'reservationRepository' defined in com.halisaha.backend.repository.ReservationRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.halisaha.backend.repository.ReservationRepository.findAllByUser_userName(java.lang.String); Reason: Failed to create query for method public abstract java.util.List com.halisaha.backend.repository.ReservationRepository.findAllByUser_userName(java.lang.String); No property 'userName' found for type 'User'; Did you mean 'username'; Traversed path: Reservation.user
+2026-02-21 22:47:48.518 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 22:47:48.519 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown initiated...
+2026-02-21 22:47:48.522 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Shutdown completed.
+2026-02-21 22:47:48.524 INFO  o.a.catalina.core.StandardService [requestId=N/A] - Stopping service [Tomcat]
+2026-02-21 22:47:48.536 INFO  o.s.b.a.l.ConditionEvaluationReportLogger [requestId=N/A] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-21 22:47:48.546 ERROR o.s.boot.SpringApplication [requestId=N/A] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationController' defined in file [/home/ulas/Halisaha_dev/target/classes/com/halisaha/backend/controller/ReservationController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'reservationService' defined in file [/home/ulas/Halisaha_dev/target/classes/com/halisaha/backend/service/ReservationService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'reservationRepository' defined in com.halisaha.backend.repository.ReservationRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.halisaha.backend.repository.ReservationRepository.findAllByUser_userName(java.lang.String); Reason: Failed to create query for method public abstract java.util.List com.halisaha.backend.repository.ReservationRepository.findAllByUser_userName(java.lang.String); No property 'userName' found for type 'User'; Did you mean 'username'; Traversed path: Reservation.user
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.halisaha.backend.BackendApplication.main(BackendApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationService' defined in file [/home/ulas/Halisaha_dev/target/classes/com/halisaha/backend/service/ReservationService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'reservationRepository' defined in com.halisaha.backend.repository.ReservationRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.halisaha.backend.repository.ReservationRepository.findAllByUser_userName(java.lang.String); Reason: Failed to create query for method public abstract java.util.List com.halisaha.backend.repository.ReservationRepository.findAllByUser_userName(java.lang.String); No property 'userName' found for type 'User'; Did you mean 'username'; Traversed path: Reservation.user
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1708)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.halisaha.backend.repository.ReservationRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.halisaha.backend.repository.ReservationRepository.findAllByUser_userName(java.lang.String); Reason: Failed to create query for method public abstract java.util.List com.halisaha.backend.repository.ReservationRepository.findAllByUser_userName(java.lang.String); No property 'userName' found for type 'User'; Did you mean 'username'; Traversed path: Reservation.user
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1708)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 34 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.halisaha.backend.repository.ReservationRepository.findAllByUser_userName(java.lang.String); Reason: Failed to create query for method public abstract java.util.List com.halisaha.backend.repository.ReservationRepository.findAllByUser_userName(java.lang.String); No property 'userName' found for type 'User'; Did you mean 'username'; Traversed path: Reservation.user
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:120)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:104)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:92)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:92)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:434)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$4(RepositoryFactoryBeanSupport.java:355)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:135)
+	at org.springframework.data.util.Lazy.get(Lazy.java:113)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:361)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	... 44 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.halisaha.backend.repository.ReservationRepository.findAllByUser_userName(java.lang.String); No property 'userName' found for type 'User'; Did you mean 'username'; Traversed path: Reservation.user
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:128)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:260)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:99)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:116)
+	... 56 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'userName' found for type 'User'; Did you mean 'username'; Traversed path: Reservation.user
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:455)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:431)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:415)
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:387)
+	at org.springframework.util.ConcurrentReferenceHashMap$6.execute(ConcurrentReferenceHashMap.java:395)
+	at org.springframework.util.ConcurrentReferenceHashMap$Segment.doTask(ConcurrentReferenceHashMap.java:688)
+	at org.springframework.util.ConcurrentReferenceHashMap.doTask(ConcurrentReferenceHashMap.java:570)
+	at org.springframework.util.ConcurrentReferenceHashMap.computeIfAbsent(ConcurrentReferenceHashMap.java:389)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:366)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:344)
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:259)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:260)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:389)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:390)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:103)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:101)
+	... 60 common frames omitted
+2026-02-21 22:51:52.008 INFO  o.h.validator.internal.util.Version [requestId=N/A] - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-21 22:51:52.050 INFO  c.h.backend.BackendApplication [requestId=N/A] - Starting BackendApplication using Java 21.0.10 with PID 53242 (/home/ulas/Halisaha_dev/target/classes started by ulas in /home/ulas/Halisaha_dev)
+2026-02-21 22:51:52.050 INFO  c.h.backend.BackendApplication [requestId=N/A] - No active profile set, falling back to 1 default profile: "default"
+2026-02-21 22:51:52.866 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-21 22:51:52.918 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [requestId=N/A] - Finished Spring Data repository scanning in 42 ms. Found 5 JPA repository interfaces.
+2026-02-21 22:51:53.317 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat initialized with port 8080 (http)
+2026-02-21 22:51:53.327 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-21 22:51:53.329 INFO  o.a.catalina.core.StandardService [requestId=N/A] - Starting service [Tomcat]
+2026-02-21 22:51:53.329 INFO  o.a.catalina.core.StandardEngine [requestId=N/A] - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-21 22:51:53.379 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring embedded WebApplicationContext
+2026-02-21 22:51:53.380 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [requestId=N/A] - Root WebApplicationContext: initialization completed in 1292 ms
+2026-02-21 22:51:53.536 INFO  o.h.jpa.internal.util.LogHelper [requestId=N/A] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-21 22:51:53.599 INFO  org.hibernate.Version [requestId=N/A] - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-02-21 22:51:53.634 INFO  o.h.c.i.RegionFactoryInitiator [requestId=N/A] - HHH000026: Second-level cache disabled
+2026-02-21 22:51:53.865 INFO  o.s.o.j.p.SpringPersistenceUnitInfo [requestId=N/A] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-21 22:51:53.892 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Starting...
+2026-02-21 22:51:54.029 INFO  com.zaxxer.hikari.pool.HikariPool [requestId=N/A] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@17a7d6c8
+2026-02-21 22:51:54.031 INFO  com.zaxxer.hikari.HikariDataSource [requestId=N/A] - HikariPool-1 - Start completed.
+2026-02-21 22:51:54.210 INFO  o.hibernate.orm.connections.pooling [requestId=N/A] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-21 22:51:54.965 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [requestId=N/A] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-21 22:51:55.056 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [requestId=N/A] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-21 22:51:55.354 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-21 22:51:55.355 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [requestId=N/A] - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-21 22:51:55.403 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [requestId=N/A] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-21 22:51:55.687 INFO  o.s.b.a.e.web.EndpointLinksResolver [requestId=N/A] - Exposing 1 endpoint beneath base path '/actuator'
+2026-02-21 22:51:55.960 INFO  o.a.coyote.http11.Http11NioProtocol [requestId=N/A] - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-21 22:51:55.971 INFO  o.s.b.w.e.tomcat.TomcatWebServer [requestId=N/A] - Tomcat started on port 8080 (http) with context path '/'
+2026-02-21 22:51:55.981 INFO  c.h.backend.BackendApplication [requestId=N/A] - Started BackendApplication in 4.359 seconds (process running for 4.904)
+2026-02-21 22:52:09.360 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [requestId=N/A] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-21 22:52:09.360 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Initializing Servlet 'dispatcherServlet'
+2026-02-21 22:52:09.362 INFO  o.s.web.servlet.DispatcherServlet [requestId=N/A] - Completed initialization in 1 ms
+2026-02-21 22:52:09.487 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver [requestId=0e3ba162-0ab8-42fd-8c95-6b32f2926ecc] - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> com.halisaha.backend.controller.AuthController.register(com.halisaha.backend.dto.RegisterRequest) with 3 errors: [Field error in object 'registerRequest' on field 'email': rejected value [fdrrssfSSddfgmail.com]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@11d996aa,.*]; default message [Invalid email format]] [Field error in object 'registerRequest' on field 'phoneNumber': rejected value [dasdsadasd]; codes [Pattern.registerRequest.phoneNumber,Pattern.phoneNumber,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.phoneNumber,phoneNumber]; arguments []; default message [phoneNumber],[Ljakarta.validation.constraints.Pattern$Flag;@386770,^05\d{9}$]; default message [Phone number must be in format 05XXXXXXXXX]] [Field error in object 'registerRequest' on field 'password': rejected value [eren]; codes [Size.registerRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.password,password]; arguments []; default message [password],2147483647,6]; default message [size must be between 6 and 2147483647]] ]
+2026-02-21 22:52:09.489 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=0e3ba162-0ab8-42fd-8c95-6b32f2926ecc] - POST /api/auth/register -> 400 (123 ms)
+2026-02-21 22:52:36.839 INFO  c.h.backend.service.AuthService [requestId=eb72bb28-59ff-40e8-a525-bdcef824c4fb] - JWT Token is generated for the User called mete
+2026-02-21 22:52:36.845 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=eb72bb28-59ff-40e8-a525-bdcef824c4fb] - POST /api/auth/login -> 200 (314 ms)
+2026-02-21 23:06:23.610 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=a09e3abb-fe2e-43c9-8211-5b86e67246c9] - POST /api/user/reservation/create -> 417 (171 ms)
+2026-02-21 23:09:41.299 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=d2102fce-10bc-47cf-97c2-21d261978af7] - POST /api/user/reservation/create -> 417 (21 ms)
+2026-02-21 23:10:14.496 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=2b44e63e-d216-4009-a092-e639611ec872] - POST /api/user/reservation/create -> 200 (100 ms)
+2026-02-21 23:12:06.152 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=f7c31707-11b5-4c06-9fd7-ff92fcb027f2] - POST /api/user/reservation/get -> 403 (13 ms)
+2026-02-21 23:12:45.307 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver [requestId=eef454be-a8e1-46fa-aaea-f438e18613d8] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-02-21 23:12:45.308 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=eef454be-a8e1-46fa-aaea-f438e18613d8] - POST /api/user/reservation/get -> 405 (15 ms)
+2026-02-21 23:13:01.929 INFO  c.h.b.config.RequestIdLoggingFilter [requestId=9dbc40aa-166d-4b69-98b5-ecf1d359f3b5] - GET /api/user/reservation/get -> 200 (29 ms)
