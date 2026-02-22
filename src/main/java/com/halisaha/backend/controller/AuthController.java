@@ -3,7 +3,7 @@ package com.halisaha.backend.controller;
 import com.halisaha.backend.dto.AuthResponse;
 import com.halisaha.backend.dto.LoginRequest;
 import com.halisaha.backend.dto.RegisterRequest;
-import com.halisaha.backend.service.AuthService;
+import com.halisaha.backend.service.Abstract.IAuthService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -19,7 +19,7 @@ import org.springframework.web.server.ResponseStatusException;
 @RequiredArgsConstructor
 public class AuthController {
 
-    private final AuthService authService;
+    private final IAuthService authService;
 
     @PostMapping("/register")
     public ResponseEntity<Void> register(@RequestBody @Valid RegisterRequest request) {

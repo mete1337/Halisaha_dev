@@ -8,21 +8,22 @@ import com.halisaha.backend.model.User;
 import com.halisaha.backend.repository.SubPitchRepository;
 import com.halisaha.backend.repository.ReservationRepository;
 import com.halisaha.backend.repository.UserRepository;
+import com.halisaha.backend.service.Abstract.IReservationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
-public class ReservationService {
+public class ReservationService implements IReservationService {
 
     private final ReservationRepository reservationRepository;
     private final SubPitchRepository subPitchRepository;
     private final UserRepository userRepository;
 
+    @Override
     public ReservationResponse createReservation(ReservationRequest request, String username) {
 
         User user = userRepository.findByUsername(username)
@@ -62,6 +63,7 @@ public class ReservationService {
                 .build();
     }
 
+    @Override
     public List<ReservationResponse> getUserReservations(String username) {
         return reservationRepository.findAllByUser_username(username)
                 .stream()

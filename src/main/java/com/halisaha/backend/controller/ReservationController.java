@@ -2,24 +2,22 @@ package com.halisaha.backend.controller;
 
 import com.halisaha.backend.dto.ReservationRequest;
 import com.halisaha.backend.dto.ReservationResponse;
-import com.halisaha.backend.service.ReservationService;
+import com.halisaha.backend.service.Abstract.IReservationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.security.Principal;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/api/user/reservation")
 @RequiredArgsConstructor
 public class ReservationController {
 
-    private final ReservationService reservationService;
+    private final IReservationService reservationService;
 
     @PostMapping("/create")
     public ResponseEntity<ReservationResponse> createReservation(@RequestBody ReservationRequest request, Principal principal) {
