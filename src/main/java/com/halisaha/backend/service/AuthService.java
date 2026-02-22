@@ -7,6 +7,8 @@ import com.halisaha.backend.dto.RegisterRequest;
 import com.halisaha.backend.model.Role;
 import com.halisaha.backend.model.User;
 import com.halisaha.backend.repository.UserRepository;
+import com.halisaha.backend.service.Abstract.IAuthService;
+import com.halisaha.backend.service.Abstract.IJwtService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -17,13 +19,14 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class AuthService {
+public class AuthService implements IAuthService {
 
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
-    private final JwtService jwtService;
+    private final IJwtService jwtService;
     private final AuthenticationManager authenticationManager;
 
+    @Override
     public void register(RegisterRequest request) {
         if (userRepository.existsByUsername(request.username())) {
             throw new IllegalArgumentException("Username is already taken");
@@ -50,6 +53,7 @@ public class AuthService {
         log.info("User {} registered: ", user.getUsername());
     }
 
+    @Override
     public AuthResponse authenticate(LoginRequest request) {
         try {
             authenticationManager.authenticate(
