@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 @Builder
 public record ReservationResponse(
-        Integer id,
+        Long id,
         String pitchName,
         String subPitchName,
         LocalDate bookingDate,
