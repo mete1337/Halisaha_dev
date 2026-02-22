@@ -4,8 +4,11 @@ import com.halisaha.backend.dto.ReservationRequest;
 import com.halisaha.backend.dto.ReservationResponse;
 import com.halisaha.backend.service.ReservationService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.security.Principal;
 import java.util.List;
@@ -18,21 +21,17 @@ public class ReservationController {
 
     private final ReservationService reservationService;
 
-    // --- REZERVASYON YAPMA UÇ NOKTASI ---
-    @PostMapping
-    public ResponseEntity<?> createReservation(@RequestBody ReservationRequest request, Principal principal) {
+    @PostMapping("/create")
+    public ResponseEntity<ReservationResponse> createReservation(@RequestBody ReservationRequest request, Principal principal) {
         try {
-            var response = reservationService.createReservation(request, principal.getName());
-            return ResponseEntity.ok(response);
-        } catch (RuntimeException e) {
-            return ResponseEntity.badRequest().body(Map.of("hata", e.getMessage()));
+            return ResponseEntity.ok( reservationService.createReservation(request, principal.getName()));
+        } catch (RuntimeException ex) {
+            throw new ResponseStatusException(HttpStatus.EXPECTATION_FAILED,ex.getMessage(), ex);
         }
     }
 
-    // --- REZERVASYONLARI LİSTELEME UÇ NOKTASI ---
-    @GetMapping
+    @GetMapping("/get")
     public ResponseEntity<List<ReservationResponse>> getUserReservations(Principal principal) {
-        var reservations = reservationService.getUserReservations(principal.getName());
-        return ResponseEntity.ok(reservations);
+        return ResponseEntity.ok(reservationService.getUserReservations(principal.getName()));
     }
 }

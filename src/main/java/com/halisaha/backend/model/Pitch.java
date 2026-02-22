@@ -47,9 +47,9 @@ public class Pitch {
     private Boolean isActive = true;
 
     @Column(columnDefinition = "TEXT")
-    private String description; // Opsiyonel
+    private String description;
 
-    private String imageUrl; // Opsiyonel
+    private String imageUrl;
 
     @CreationTimestamp
     @Column(nullable = false, updatable = false)

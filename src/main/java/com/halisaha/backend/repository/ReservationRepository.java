@@ -18,4 +18,5 @@ public interface ReservationRepository extends JpaRepository<Reservation, Intege
     );
 
     List<Reservation> findAllByUser_Email(String email);
+    List<Reservation> findAllByUser_username(String username);
 }
