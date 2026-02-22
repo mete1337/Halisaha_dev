@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 public record ReservationRequest(
-        Integer subPitchId,
+        Long subPitchId,
         LocalDate bookingDate,
         LocalTime startTime,
         LocalTime endTime

@@ -1,18 +1,13 @@
 package com.halisaha.backend.model;
 
-
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
-import java.util.Collection;
-import java.util.List;
-import java.time.LocalDateTime;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-
+import java.util.Collection;
+import java.util.List;
 @Entity
 @Table(name = "users")
 @Getter
@@ -20,11 +15,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User implements UserDetails {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class User extends BaseModel implements UserDetails {
 
     @Column(nullable = false, unique = true)
     private String username;
@@ -53,4 +44,3 @@ public class User implements UserDetails {
     }
 
 }
-
