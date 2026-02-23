@@ -31,6 +31,9 @@ public class ReservationService implements IReservationService {
 
         SubPitch subPitch = subPitchRepository.findById(request.subPitchId())
                 .orElseThrow(() -> new RuntimeException("The Subpitch requested for reservation is not exist"));
+        if (!Boolean.TRUE.equals(subPitch.getIsActive())) {
+            throw new RuntimeException("Subpitch is not active yet, admin approval required");
+        }
 
         boolean isBooked = reservationRepository.existsBySubPitchIdAndBookingDateAndStartTimeLessThanAndEndTimeGreaterThan(
                 request.subPitchId(),

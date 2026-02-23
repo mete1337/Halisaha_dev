@@ -1,7 +1,6 @@
 package com.halisaha.backend.controller;
 
-import com.halisaha.backend.dto.AdminPitchCreateRequest;
-import com.halisaha.backend.dto.PitchResponse;
+import com.halisaha.backend.dto.SubPitchCreateRequest;
 import com.halisaha.backend.dto.SubPitchResponse;
 import com.halisaha.backend.service.Abstract.IPitchService;
 import jakarta.validation.Valid;
@@ -10,28 +9,20 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.security.Principal;
+
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/admin/pitch")
-public class PitchController {
+@RequestMapping("/api/owner/subpitch")
+public class OwnerSubPitchController {
 
     private final IPitchService pitchService;
 
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
-    public PitchResponse createPitch(@RequestBody @Valid AdminPitchCreateRequest request) {
-    try {
-        return pitchService.createPitchAsAdmin(request);
-
-    } catch (RuntimeException ex) {
-        throw new ResponseStatusException(HttpStatus.BAD_REQUEST, ex.getMessage(), ex);
-    }
-    }
-
-    @PatchMapping("/subpitch/{subPitchId}/approve")
-    public SubPitchResponse approveSubPitch(@PathVariable Long subPitchId) {
+    public SubPitchResponse createSubPitch(@RequestBody @Valid SubPitchCreateRequest request, Principal principal) {
         try {
-            return pitchService.approveSubPitch(subPitchId);
+            return pitchService.createSubPitchAsOwner(request, principal.getName());
         } catch (RuntimeException ex) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, ex.getMessage(), ex);
         }
