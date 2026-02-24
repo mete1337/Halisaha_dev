@@ -2,7 +2,6 @@ package com.halisaha.backend.controller;
 
 import com.halisaha.backend.dto.AdminPitchCreateRequest;
 import com.halisaha.backend.dto.PitchResponse;
-import com.halisaha.backend.dto.SubPitchResponse;
 import com.halisaha.backend.service.Abstract.IPitchService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -26,14 +25,5 @@ public class PitchController {
     } catch (RuntimeException ex) {
         throw new ResponseStatusException(HttpStatus.BAD_REQUEST, ex.getMessage(), ex);
     }
-    }
-
-    @PatchMapping("/subpitch/{subPitchId}/approve")
-    public SubPitchResponse approveSubPitch(@PathVariable Long subPitchId) {
-        try {
-            return pitchService.approveSubPitch(subPitchId);
-        } catch (RuntimeException ex) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, ex.getMessage(), ex);
-        }
     }
 }
