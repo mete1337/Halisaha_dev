@@ -7,7 +7,7 @@ import java.time.LocalTime;
 
 @Builder
 public record PitchResponse(
-        Integer id,
+        Long id,
         Long ownerId,
         String ownerName,
         String name,

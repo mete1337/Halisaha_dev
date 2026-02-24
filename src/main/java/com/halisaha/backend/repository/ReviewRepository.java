@@ -3,5 +3,9 @@ package com.halisaha.backend.repository;
 import com.halisaha.backend.model.Review;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.List;
+
 public interface ReviewRepository extends JpaRepository<Review, Long> {
+    boolean existsByReservationId(Long reservationId);
+    List<Review> findAllByUser_Username(String username);
 }
